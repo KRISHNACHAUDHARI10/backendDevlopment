@@ -11,7 +11,6 @@ app.use((req, res, next) => {
   console.log('Request Received', req.url, req.method, req.body);
   next();
 });
-
 app.get("/", (req, res, next) => {
   res.send(`
       <!DOCTYPE html>
